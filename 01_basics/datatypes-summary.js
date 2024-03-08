@@ -22,6 +22,8 @@ const bigNumber = 3265472924367282n
 
 //Non-primitive or reference type
 
+// => Arrays, Objects, Functions
+
 const heros = ["shaktiman", "spiderman", "superman"]; // datatype => object
 
 let myObj = {
@@ -33,6 +35,25 @@ const myFunction = function(){
     console.log("Hello Gorav"); //datatype => function object
 }
 
-console.log(typeof id)
+//console.log(typeof id)
 
-// => Arrays, Objects, Functions
+
+// ***********************************************************
+// Stack (Primitive) and Heap (Non-primitive)
+
+let myYoutubeName = "goravsinghdotcom"
+
+let anotherName = myYoutubeName
+anotherName = "kakashidotcom"
+console.log(anotherName);
+
+let userOne = {
+    email: "gorav@gmail.com",
+    upi: "user@ybl",
+}
+
+let userTwo = userOne;
+
+userTwo.email = "user@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
